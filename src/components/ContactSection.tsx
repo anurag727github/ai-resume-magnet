@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Mail, Phone, Linkedin } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -56,6 +57,39 @@ const ContactSection = () => {
               </div>
               
               <div className="border-t border-border/50 pt-6">
+                <div className="mb-6">
+                  <h4 className="font-semibold mb-4 text-lg">Get in Touch</h4>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a 
+                      href="mailto:anuragilake727@gmail.com"
+                      className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
+                    >
+                      <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                      <span>anuragilake727@gmail.com</span>
+                    </a>
+                    
+                    <a 
+                      href="https://wa.me/919322051167"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
+                    >
+                      <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                      <span>+91 9322051167</span>
+                    </a>
+                    
+                    <a 
+                      href="https://www.linkedin.com/in/anurag-ilake-7881a32b0/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
+                    >
+                      <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                      <span>LinkedIn Profile</span>
+                    </a>
+                  </div>
+                </div>
+                
                 <p className="text-muted-foreground italic">
                   "Ready to challenge myself and contribute to innovative AI/ML projects. 
                   Let's build the future together!"
